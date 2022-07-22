@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gdfewe
+  name: uwiyuere
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: gdfewe
+      app: uwiyuere
   template:
     metadata:
       labels:
-        app: gdfewe
+        app: uwiyuere
     spec:
       containers:
-      - image: okteto.dev/gdfewe:latest
-        name: gdfewe
+      - image: okteto.dev/uwiyuere:latest
+        name: uwiyuere
         ports:
         - containerPort: 8080
         env:
