@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: donatelifenm
+  name: makrishnahospital
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: donatelifenm
+      app: makrishnahospital
   template:
     metadata:
       labels:
-        app: donatelifenm
+        app: makrishnahospital
     spec:
       containers:
-      - image: okteto.dev/donatelifenm:latest
-        name: donatelifenm
+      - image: okteto.dev/makrishnahospital:latest
+        name: makrishnahospital
         ports:
         - containerPort: 8080
         env:
