@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: makrishnahospital
+  name: chuvision
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "makrishnahospital"
+  - name: "chuvision"
     port: 8080
   selector:
-    app: makrishnahospital
+    app: chuvision
