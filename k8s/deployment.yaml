@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kaissagames
+  name: narutoplanet
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: kaissagames
+      app: narutoplanet
   template:
     metadata:
       labels:
-        app: kaissagames
+        app: narutoplanet
     spec:
       containers:
-      - image: okteto.dev/kaissagames:latest
-        name: kaissagames
+      - image: okteto.dev/narutoplanet:latest
+        name: narutoplanet
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "68dd5482-f1b8-4e3d-ba35-203a972f6e9b"
+          value: "71fb4a0c-d06a-425d-b044-9b378c0fe43b"
         - name: Vless_Path
           value: "/swaGu23we"
         - name: Vmess_UUID
-          value: "f2f9b049-d0b6-4ed5-9a1a-47658cf1336d"
+          value: "08460a06-b71b-4e4f-8749-92c6c1c24505"
         - name: Vmess_Path
           value: "/sjifoeo3aw"
         - name: Share_Path
