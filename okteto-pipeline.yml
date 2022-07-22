@@ -1,3 +1,3 @@
 deploy:
-  - okteto build -t okteto.dev/chuvision:latest
+  - okteto build -t okteto.dev/claytonsleep:latest
   - kubectl apply -f k8s
