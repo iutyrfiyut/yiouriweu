@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hghuhsyt
+  name: kaissagames
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hghuhsyt
+      app: kaissagames
   template:
     metadata:
       labels:
-        app: hghuhsyt
+        app: kaissagames
     spec:
       containers:
-      - image: okteto.dev/hghuhsyt:latest
-        name: hghuhsyt
+      - image: okteto.dev/kaissagames:latest
+        name: kaissagames
         ports:
         - containerPort: 8080
         env:
