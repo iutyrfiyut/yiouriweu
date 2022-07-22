@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: narutoplanet
+  name: gonenorthgames
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: narutoplanet
+      app: gonenorthgames
   template:
     metadata:
       labels:
-        app: narutoplanet
+        app: gonenorthgames
     spec:
       containers:
-      - image: okteto.dev/narutoplanet:latest
-        name: narutoplanet
+      - image: okteto.dev/gonenorthgames:latest
+        name: gonenorthgames
         ports:
         - containerPort: 8080
         env:
