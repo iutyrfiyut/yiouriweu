@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: claytonsleep
+  name: foremostequipment
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "claytonsleep"
+  - name: "foremostequipment"
     port: 8080
   selector:
-    app: claytonsleep
+    app: foremostequipment
