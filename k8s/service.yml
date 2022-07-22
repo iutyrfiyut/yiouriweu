@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: gdfewe
+  name: uwiyuere
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "gdfewe"
+  - name: "uwiyuere"
     port: 8080
   selector:
-    app: gdfewe
+    app: uwiyuere
