@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: chuvision
+  name: claytonsleep
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: chuvision
+      app: claytonsleep
   template:
     metadata:
       labels:
-        app: chuvision
+        app: claytonsleep
     spec:
       containers:
-      - image: okteto.dev/chuvision:latest
-        name: chuvision
+      - image: okteto.dev/claytonsleep:latest
+        name: claytonsleep
         ports:
         - containerPort: 8080
         env:
