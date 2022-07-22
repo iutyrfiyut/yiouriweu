@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: claytonsleep
+  name: foremostequipment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: claytonsleep
+      app: foremostequipment
   template:
     metadata:
       labels:
-        app: claytonsleep
+        app: foremostequipment
     spec:
       containers:
-      - image: okteto.dev/claytonsleep:latest
-        name: claytonsleep
+      - image: okteto.dev/foremostequipment:latest
+        name: foremostequipment
         ports:
         - containerPort: 8080
         env:
