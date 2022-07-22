@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: americansforcur
+  name: mymuseumwa
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "americansforcur"
+  - name: "mymuseumwa"
     port: 8080
   selector:
-    app: americansforcur
+    app: mymuseumwa
