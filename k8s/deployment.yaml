@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: makrishnahospital
+  name: chuvision
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: makrishnahospital
+      app: chuvision
   template:
     metadata:
       labels:
-        app: makrishnahospital
+        app: chuvision
     spec:
       containers:
-      - image: okteto.dev/makrishnahospital:latest
-        name: makrishnahospital
+      - image: okteto.dev/chuvision:latest
+        name: chuvision
         ports:
         - containerPort: 8080
         env:
