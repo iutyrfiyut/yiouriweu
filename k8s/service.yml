@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: gonenorthgames
+  name: donatelifenm
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "gonenorthgames"
+  - name: "donatelifenm"
     port: 8080
   selector:
-    app: gonenorthgames
+    app: donatelifenm
