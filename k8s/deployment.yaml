@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: americansforcur
+  name: mymuseumwa
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: americansforcur
+      app: mymuseumwa
   template:
     metadata:
       labels:
-        app: americansforcur
+        app: mymuseumwa
     spec:
       containers:
-      - image: okteto.dev/americansforcur:latest
-        name: americansforcur
+      - image: okteto.dev/mymuseumwa:latest
+        name: mymuseumwa
         ports:
         - containerPort: 8080
         env:
