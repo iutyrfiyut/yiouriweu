@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gonenorthgames
+  name: donatelifenm
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: gonenorthgames
+      app: donatelifenm
   template:
     metadata:
       labels:
-        app: gonenorthgames
+        app: donatelifenm
     spec:
       containers:
-      - image: okteto.dev/gonenorthgames:latest
-        name: gonenorthgames
+      - image: okteto.dev/donatelifenm:latest
+        name: donatelifenm
         ports:
         - containerPort: 8080
         env:
