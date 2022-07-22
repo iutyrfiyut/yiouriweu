@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: foremostequipment
+  name: toncountymuseum
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: foremostequipment
+      app: toncountymuseum
   template:
     metadata:
       labels:
-        app: foremostequipment
+        app: toncountymuseum
     spec:
       containers:
-      - image: okteto.dev/foremostequipment:latest
-        name: foremostequipment
+      - image: okteto.dev/toncountymuseum:latest
+        name: toncountymuseum
         ports:
         - containerPort: 8080
         env:
