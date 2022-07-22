@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: kaissagames
+  name: narutoplanet
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "kaissagames"
+  - name: "narutoplanet"
     port: 8080
   selector:
-    app: kaissagames
+    app: narutoplanet
